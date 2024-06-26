@@ -3577,8 +3577,7 @@ local function BKHQP_fake_script() -- Fake Script: StarterGui.YARHM.Murder Myste
 table.insert(module, {
     Type = "Button",
     Args = {"Shoot murderer", function(Self)
-        local sheriff = findSheriff()
-        if not sheriff or sheriff ~= localplayer then 
+        if findSheriff() ~= localplayer then 
             fu.notification("You're not sheriff/hero.") 
             return 
         end
@@ -3589,35 +3588,47 @@ table.insert(module, {
             return
         end
 
-        local gun = localplayer.Character:FindFirstChild("Gun")
-        if not gun then
-            fu.notification("You don't have the gun.")
-            return
+        if not localplayer.Character:FindFirstChild("Gun") then
+            local hum = localplayer.Character:FindFirstChild("Humanoid")
+            if localplayer.Backpack:FindFirstChild("Gun") then
+                hum:EquipTool(localplayer.Backpack:FindFirstChild("Gun"))
+            else
+                fu.notification("You don't have the gun..?")
+                return
+            end
         end
 
-        -- Predict the target's position
+        local murdererHRP = murderer.Character:FindFirstChild("HumanoidRootPart")
+        if not murdererHRP then
+            fu.notification("Could not find the murderer's HumanoidRootPart.")
+            return
+        end
+        
         local predictedPosition = getPredictedPosition(murderer, shootOffset)
+        
+        -- Enhanced Prediction for Jumping Murderer
+        if murderer.Character:FindFirstChild("Humanoid").Jump then
+            -- Incorporating the provided function
+            predictedPosition = getPredictedPositionWhileJumping(murderer, shootOffset)
+        end
 
-        -- Adjust aim for jumping and zigzagging
-        local aimOffset = Vector3.new(0, 2, 0) -- Adjust this offset based on jump height prediction
-        local movementDirection = (murderer.Character.HumanoidRootPart.Position - murderer.Character.HumanoidRootPart.Position).unit
-        local sidewaysOffset = movementDirection * 3
-
-        predictedPosition = predictedPosition + aimOffset + sidewaysOffset
-
-        -- Aim and shoot
         local args = {
             [1] = 1,
             [2] = predictedPosition,
             [3] = "AH"
         }
-        gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
-
-        -- Notify about the action
-        fu.notification("Shot at the murderer with Shoot murderer")
-    end}
+        
+        local success, result = pcall(function()
+            return localplayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
+        end)
+        
+        if not success then
+            fu.notification("Failed to shoot: " .. tostring(result))
+        else
+            fu.notification("Shot fired successfully.")
+        end
+    end,}
 })
-
 	
 	
 	
