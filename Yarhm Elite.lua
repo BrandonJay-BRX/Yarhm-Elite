@@ -2362,7 +2362,7 @@ local function WUAUKU_fake_script() -- Fake Script: StarterGui.YARHM.Init
 	_G.Modules = {}
 	
 	--require(script.Parent.FUNCTIONS).notification("Thanks for using YARHM Elite+! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("Updates | Adjustment | Added Tools: Shoot Murderer (Adjusted)")
+	require(script.Parent.FUNCTIONS).notification("Updates | Adjustment | Added Tools: Hitbox Loop (Added)")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -4078,9 +4078,11 @@ local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	local fu = require(script.Parent.FUNCTIONS)
 	
 	local loopfovandws = false    
-    local ctrlclicktp = false
+	local ctrlclicktp = false
+	local loopHitbox = false
 	local ws = 16
 	local fov = 70
+	local hitboxSize = 2
 	
 	local hidden = false
 	
@@ -4091,6 +4093,21 @@ local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 				if game.Players.LocalPlayer.Character then
 					if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
 						game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = ws
+					end
+				end
+			end
+			
+			if loopHitbox then
+				local players = game:GetService("Players"):GetPlayers()
+				for i,v in ipairs(players) do
+					if v ~= game.Players.LocalPlayer and v.Character:FindFirstChild('HumanoidRootPart') then
+						local Size = Vector3.new(hitboxSize, hitboxSize, hitboxSize)
+						local Root = v.Character:FindFirstChild('HumanoidRootPart')
+						if Root:IsA("BasePart") then
+							Root.Size = Size
+							Root.Transparency = 0.2
+							Root.CanCollide = false
+						end
 					end
 				end
 			end
@@ -4187,25 +4204,18 @@ local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	table.insert(module, {
 		Type = "Input",
 		Args = {"Hitbox expander", "Expand everyone's hitbox", function(Self, ToExpand)
-			local players = game:GetService("Players"):GetPlayers()
-			for i,v in ipairs(players) do
-				if v ~= game.Players.LocalPlayer and v.Character:FindFirstChild('HumanoidRootPart') then
-					local sizeArg = tonumber(ToExpand)
-					local Size = Vector3.new(sizeArg,sizeArg,sizeArg)
-					local Root = v.Character:FindFirstChild('HumanoidRootPart')
-					if Root:IsA("BasePart") then
-						if not ToExpand or sizeArg == 1 then
-							Root.Size = Vector3.new(2,1,1)
-							Root.Transparency = 0.2
-						else
-							Root.Size = Size
-							Root.Transparency = 0.2
-						end
-						Root.CanCollide = false
-					end
-				end
-			end
+			hitboxSize = tonumber(ToExpand) or 2
 			fu.notification("Hitboxes expanded.")
+		end,}
+	})
+	table.insert(module, {
+		Type = "Text",
+		Args = {"Add a number to the  hitbox first before turning this On"}
+	})
+	table.insert(module, {
+		Type = "Toggle",
+		Args = {"Loop hitbox expansion", function(Self, state)
+			loopHitbox = state
 		end,}
 	})
 	
@@ -4279,6 +4289,7 @@ local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 			loopfovandws = state
 		end,}
 	})
+
 	
 	
 	if uis.KeyboardEnabled and uis.MouseEnabled then
