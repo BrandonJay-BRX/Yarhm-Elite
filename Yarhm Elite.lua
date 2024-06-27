@@ -1,4 +1,5 @@
--- YARHM by Imperial, v1.13.1.1
+-- YARHM Elite+ by Brandon Jay, v1.1
+-- YARHM by Imperial
 
 -- Instances:
 
@@ -161,7 +162,7 @@ Converted["_YARHM"].IgnoreGuiInset = true
 Converted["_YARHM"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Converted["_YARHM"].ResetOnSpawn = false
 Converted["_YARHM"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_YARHM"].Name = "YARHM"
+Converted["_YARHM"].Name = "YARHM Elite+"
 Converted["_YARHM"].Parent = game:GetService("CoreGui")
 
 Converted["_Open"].Font = Enum.Font.Gotham
@@ -678,7 +679,7 @@ Converted["_UICorner13"].Parent = Converted["_Close"]
 Converted["_UIStroke9"].Parent = Converted["_Close"]
 
 Converted["_HubCredits"].Font = Enum.Font.GothamBold
-Converted["_HubCredits"].Text = "made and open sourced by imperial"
+Converted["_HubCredits"].Text = "Imperial | Brandon Jay"
 Converted["_HubCredits"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_HubCredits"].TextScaled = true
 Converted["_HubCredits"].TextSize = 14
@@ -696,7 +697,7 @@ Converted["_HubCredits"].Name = "HubCredits"
 Converted["_HubCredits"].Parent = Converted["_Menu"]
 
 Converted["_HubDesc"].Font = Enum.Font.GothamBold
-Converted["_HubDesc"].Text = "yet another random hub menu"
+Converted["_HubDesc"].Text = "YARHM Elite+"
 Converted["_HubDesc"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_HubDesc"].TextSize = 14
 Converted["_HubDesc"].TextWrapped = true
@@ -712,7 +713,7 @@ Converted["_HubDesc"].Name = "HubDesc"
 Converted["_HubDesc"].Parent = Converted["_Menu"]
 
 Converted["_HubName"].Font = Enum.Font.GothamBold
-Converted["_HubName"].Text = "YARHM"
+Converted["_HubName"].Text = "YARHM Elite+"
 Converted["_HubName"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_HubName"].TextScaled = true
 Converted["_HubName"].TextSize = 14
@@ -741,7 +742,7 @@ Converted["_CanvasGroup"].Parent = Converted["_Menu"]
 
 Converted["_UICorner14"].Parent = Converted["_CanvasGroup"]
 
-Converted["_ImageLabel"].Image = "rbxassetid://17864987433"
+Converted["_ImageLabel"].Image = "rbxassetid://18197953656"
 Converted["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -789,7 +790,7 @@ Converted["_Area1"].Name = "Area"
 Converted["_Area1"].Parent = Converted["_Area"]
 
 Converted["_TextLabel5"].Font = Enum.Font.GothamBold
-Converted["_TextLabel5"].Text = "yet another random hub menu"
+Converted["_TextLabel5"].Text = "Premium"
 Converted["_TextLabel5"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel5"].TextSize = 14
 Converted["_TextLabel5"].AnchorPoint = Vector2.new(0.5, 0.5)
@@ -802,7 +803,7 @@ Converted["_TextLabel5"].Size = UDim2.new(0, 200, 0, 50)
 Converted["_TextLabel5"].Parent = Converted["_Area1"]
 
 Converted["_TextLabel6"].Font = Enum.Font.GothamBold
-Converted["_TextLabel6"].Text = "YARHM"
+Converted["_TextLabel6"].Text = "YARHM Elite+"
 Converted["_TextLabel6"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel6"].TextScaled = true
 Converted["_TextLabel6"].TextSize = 14
@@ -907,7 +908,7 @@ Converted["_UIListLayout4"].Parent = Converted["_Options"]
 
 Converted["_OptionPlaceholder"].Font = Enum.Font.GothamBold
 Converted["_OptionPlaceholder"].RichText = true
-Converted["_OptionPlaceholder"].Text = "aaaaaaaaaaa"
+Converted["_OptionPlaceholder"].Text = "Premium"
 Converted["_OptionPlaceholder"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_OptionPlaceholder"].TextScaled = true
 Converted["_OptionPlaceholder"].TextSize = 100
@@ -2126,7 +2127,7 @@ end
 
 -- Fake Local Scripts:
 
-local function LYFEOXP_fake_script() -- Fake Script: StarterGui.YARHM.Open.InitOpen
+local function TNUH_fake_script() -- Fake Script: StarterGui.YARHM.Open.InitOpen
     local script = Instance.new("LocalScript")
     script.Name = "InitOpen"
     script.Parent = Converted["_Open"]
@@ -2162,7 +2163,7 @@ local function LYFEOXP_fake_script() -- Fake Script: StarterGui.YARHM.Open.InitO
 	--	Transparency = 1
 	--}):Play()
 end
-local function RMUSSAH_fake_script() -- Fake Script: StarterGui.YARHM.Open.OnClick
+local function BILF_fake_script() -- Fake Script: StarterGui.YARHM.Open.OnClick
     local script = Instance.new("LocalScript")
     script.Name = "OnClick"
     script.Parent = Converted["_Open"]
@@ -2210,7 +2211,7 @@ local function RMUSSAH_fake_script() -- Fake Script: StarterGui.YARHM.Open.OnCli
 	end)
 	
 end
-local function EJKZ_fake_script() -- Fake Script: StarterGui.YARHM.Open.Resizer
+local function WXYNGOS_fake_script() -- Fake Script: StarterGui.YARHM.Open.Resizer
     local script = Instance.new("LocalScript")
     script.Name = "Resizer"
     script.Parent = Converted["_Open"]
@@ -2296,7 +2297,7 @@ local function EJKZ_fake_script() -- Fake Script: StarterGui.YARHM.Open.Resizer
 	userInputService.InputChanged:Connect(onInputChanged)
 	
 end
-local function WGJWPUD_fake_script() -- Fake Script: StarterGui.YARHM.Init
+local function WUAUKU_fake_script() -- Fake Script: StarterGui.YARHM.Init
     local script = Instance.new("LocalScript")
     script.Name = "Init"
     script.Parent = Converted["_YARHM"]
@@ -2360,8 +2361,8 @@ local function WGJWPUD_fake_script() -- Fake Script: StarterGui.YARHM.Init
 	
 	_G.Modules = {}
 	
-	--require(script.Parent.FUNCTIONS).notification("Thanks for using YARHM! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("Welcome to YARHM v1.13!")
+	--require(script.Parent.FUNCTIONS).notification("Thanks for using YARHM Elite+! To use this hub, triple-click/tap the top region of your screen.")
+	require(script.Parent.FUNCTIONS).notification("Updates | Adjustment | Added Tools: Shoot Murderer (Adjusted)")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -2391,7 +2392,7 @@ local function WGJWPUD_fake_script() -- Fake Script: StarterGui.YARHM.Init
 	
 	--require(script.Parent.DraggableObject).new(script.Parent.Menu.CanvasGroup.Opener, script.Parent.Menu):Enable()
 end
-local function ULTRD_fake_script() -- Fake Script: StarterGui.YARHM.FloatingButton.Keybinding
+local function JDPRURH_fake_script() -- Fake Script: StarterGui.YARHM.FloatingButton.Keybinding
     local script = Instance.new("LocalScript")
     script.Name = "Keybinding"
     script.Parent = Converted["_FloatingButton"]
@@ -2406,7 +2407,7 @@ local function ULTRD_fake_script() -- Fake Script: StarterGui.YARHM.FloatingButt
 
 	
 end
-local function EQAX_fake_script() -- Fake Script: StarterGui.YARHM.FloatingButton.Invisible
+local function KYALNYD_fake_script() -- Fake Script: StarterGui.YARHM.FloatingButton.Invisible
     local script = Instance.new("LocalScript")
     script.Name = "Invisible"
     script.Parent = Converted["_FloatingButton"]
@@ -2456,7 +2457,7 @@ local function EQAX_fake_script() -- Fake Script: StarterGui.YARHM.FloatingButto
 	--	holding = false
 	--end)
 end
-local function SAFWDC_fake_script() -- Fake Script: StarterGui.YARHM.AddCustomModule.Add.LocalScript
+local function XHSAU_fake_script() -- Fake Script: StarterGui.YARHM.AddCustomModule.Add.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Add"]
@@ -2497,7 +2498,7 @@ local function SAFWDC_fake_script() -- Fake Script: StarterGui.YARHM.AddCustomMo
 		end
 	end)
 end
-local function PMYRZO_fake_script() -- Fake Script: StarterGui.YARHM.AddCustomModule.Cancel.LocalScript
+local function VVIBB_fake_script() -- Fake Script: StarterGui.YARHM.AddCustomModule.Cancel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Cancel"]
@@ -2521,7 +2522,7 @@ local function PMYRZO_fake_script() -- Fake Script: StarterGui.YARHM.AddCustomMo
 		}):Play()
 	end)
 end
-local function FUSF_fake_script() -- Fake Script: StarterGui.YARHM.Menu.UIStroke.UIGradient.Animator
+local function WFYLTB_fake_script() -- Fake Script: StarterGui.YARHM.Menu.UIStroke.UIGradient.Animator
     local script = Instance.new("LocalScript")
     script.Name = "Animator"
     script.Parent = Converted["_UIGradient3"]
@@ -2542,7 +2543,7 @@ local function FUSF_fake_script() -- Fake Script: StarterGui.YARHM.Menu.UIStroke
 			Rotation = -180
 		}):Play()
 end
-local function MHTP_fake_script() -- Fake Script: StarterGui.YARHM.Menu.List.AutoSetup
+local function AJDP_fake_script() -- Fake Script: StarterGui.YARHM.Menu.List.AutoSetup
     local script = Instance.new("LocalScript")
     script.Name = "AutoSetup"
     script.Parent = Converted["_List"]
@@ -2596,7 +2597,7 @@ local function MHTP_fake_script() -- Fake Script: StarterGui.YARHM.Menu.List.Aut
 		end
 	end)
 end
-local function DFXYOC_fake_script() -- Fake Script: StarterGui.YARHM.Menu.AddCustomModule.LocalScript
+local function LMQTO_fake_script() -- Fake Script: StarterGui.YARHM.Menu.AddCustomModule.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_AddCustomModule1"]
@@ -2620,7 +2621,7 @@ local function DFXYOC_fake_script() -- Fake Script: StarterGui.YARHM.Menu.AddCus
 		}):Play()
 	end)
 end
-local function OQVW_fake_script() -- Fake Script: StarterGui.YARHM.Menu.Close.LocalScript
+local function MGVWMZA_fake_script() -- Fake Script: StarterGui.YARHM.Menu.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Close"]
@@ -2647,7 +2648,7 @@ local function OQVW_fake_script() -- Fake Script: StarterGui.YARHM.Menu.Close.Lo
 		}):Play()
 	end)
 end
-local function KIADNSR_fake_script() -- Fake Script: StarterGui.YARHM.Menu.CanvasGroup.Opener.LocalScript
+local function AFSHYE_fake_script() -- Fake Script: StarterGui.YARHM.Menu.CanvasGroup.Opener.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Opener"]
@@ -2680,7 +2681,7 @@ local function KIADNSR_fake_script() -- Fake Script: StarterGui.YARHM.Menu.Canva
 		ready = true
 	end)
 end
-local function HGMTZY_fake_script() -- Fake Script: StarterGui.YARHM.Flee the Facility
+local function SYRG_fake_script() -- Fake Script: StarterGui.YARHM.Flee the Facility
     local script = Instance.new("LocalScript")
     script.Name = "Flee the Facility"
     script.Parent = Converted["_YARHM"]
@@ -2990,7 +2991,7 @@ local function HGMTZY_fake_script() -- Fake Script: StarterGui.YARHM.Flee the Fa
 	
 	_G.Modules[2] = module
 end
-local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mystery 2
+local function BKHQP_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mystery 2
     local script = Instance.new("LocalScript")
     script.Name = "Murder Mystery 2"
     script.Parent = Converted["_YARHM"]
@@ -3010,10 +3011,12 @@ local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mys
 	local sheriffAimbot = false
 	local coinAutoCollect = false
 	local autoShooting = false
-	local shootOffset = 1
+	local shootOffset = 2
 	
 	local autoGetDroppedGun = false
-	local simulateKnifeThrow = false
+    local pickUpDistanceMeters = 150 -- Set the distance threshold in meters
+    local pickUpDistanceStuds = pickUpDistanceMeters * 3.57 -- Calculating Huhu
+    local godModeEnabled = false
 	
 	local localplayer = game:GetService("Players").LocalPlayer
 	
@@ -3567,11 +3570,12 @@ local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mys
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"Tools"}
+		Args = {"<font color='#FFFF00'>Premium Tools+</font>"}
 	})
 	
 	
-	table.insert(module, {
+	-- Integrated custom name directly into the script
+table.insert(module, {
 		Type = "Button",
 		Args = {"Shoot murderer", function(Self)
 			if findSheriff() ~= localplayer then 
@@ -3611,7 +3615,7 @@ local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mys
 			localplayer.Character.Gun.KnifeServer.ShootGun:InvokeServer(unpack(args))
 		end,}
 	})
-	
+
 	
 	
 	
@@ -3681,7 +3685,7 @@ local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mys
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"Shoot offset re-aims the gun/knife shoot/throw to the character's predicted position. Recommended is 1."}
+		Args = {"Shoot offset re-aims the gun/knife shoot/throw to the character's predicted position. Recommended is 2."}
 	})
 	
 	table.insert(module, {
@@ -3750,73 +3754,115 @@ local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mys
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"<font color='#FF0000'>Detectables</font>"}
+		Args = {"<font color='#FFFF00'>Premium+</font>"}
 	})
 	
+
+	table.insert(module, {
+	Type = "Toggle",
+	Args = {"Automatically get gun on drop", function(Self, state)
+		autoGetDroppedGun = state
+		if autoGetDroppedGun then
+			fu.notification("Automatic gun retrieval enabled.")
+			-- Start monitoring for gun drops
+			coroutine.wrap(function()
+				while autoGetDroppedGun do
+					local gunDrop = workspace:FindFirstChild("GunDrop")
+					if gunDrop then
+						local character = localplayer.Character
+						local characterPosition = character:GetPivot().Position
+						local gunDropPosition = gunDrop.Position
+						
+						local distanceToGunDrop = (characterPosition - gunDropPosition).Magnitude
+						
+						if distanceToGunDrop <= pickUpDistanceStuds then
+							local previousPosition = character:GetPivot()
+
+							-- Move to the gun drop position
+							character:MoveTo(gunDrop.Position)
+							
+							-- Wait for the gun to be picked up
+							localplayer.Backpack.ChildAdded:Wait()
+							
+							-- Return to the previous position
+							character:PivotTo(previousPosition)
+						else
+							fu.notification("Gun drop detected but too far away to auto-pickup.")
+						end
+					end
+					wait(1) -- Check every second
+				end
+			end)()
+		else
+			fu.notification("Automatic gun retrieval disabled.")
+		end
+	end}
+})
 	
 	table.insert(module, {
-		Type = "Button",
-		Args = {"Teleport to dropped gun", function(Self)
-			if not workspace:FindFirstChild("GunDrop") then fu.notification("No dropped gun to be teleported to.") return end
-			local previousPosition = localplayer.Character:GetPivot()
-			localplayer.Character:MoveTo(workspace:FindFirstChild("GunDrop").Position)
-			localplayer.Backpack.ChildAdded:Wait()
-			localplayer.Character:PivotTo(previousPosition)
-			--fu.notification("Attempting a pathfind to gun..")
-	
-			--local pathToGun = phs:CreatePath({
-			--	AgentRadius = 3,
-			--	AgentHeight = localplayer.Character:GetExtentsSize().Y,
-			--	AgentCanJump = true
-			--})
-			--local completed, err = pcall(function()
-			--	pathToGun:ComputeAsync(localplayer.Character.PrimaryPart.Position, Vector3.new(workspace:FindFirstChild("GunDrop"):GetPivot().X, workspace:FindFirstChild("GunDrop"):GetPivot().Y, workspace:FindFirstChild("GunDrop"):GetPivot().Z))
-			--end)
-	
-			--if completed and pathToGun.Status == Enum.PathStatus.Success then
-			--	fu.notification("Found a path. Moving.")
-			--	for _, waypoint in pathToGun:GetWaypoints() do
-			--		task.wait(0.05)
-			--		game:GetService("TweenService"):Create(localplayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(0.05, Enum.EasingStyle.Linear), {
-			--			CFrame = CFrame.new(waypoint.Position + Vector3.new(0, 3, 0))	
-			--		}):Play()
-			--	end
-			--else
-			--	fu.notification("Couldn't find a proper path to gun. Try moving a little closer to the gun.")
-			--end
-		end,}
-	})
-	
-	table.insert(module, {
-		Type = "Toggle",
-		Args = {"Automatically get gun on drop", function(Self, state)
-			autoGetDroppedGun = state
-		end,}
-	})
-	
-	table.insert(module, {
-		Type = "Button",
-		Args = {"God mode (Very, VERY UNSTABLE)", function(Self) -- Credits to EdgeIY, Infinite Yield
-			local Cam = workspace.CurrentCamera
-			local Pos, Char = Cam.CFrame, localplayer.Character
-			local Human = Char and Char.FindFirstChildWhichIsA(Char, "Humanoid")
-			local nHuman = Human.Clone(Human)
-			nHuman.Parent, localplayer.Character = Char, nil
-			nHuman.SetStateEnabled(nHuman, 15, false)
-			nHuman.SetStateEnabled(nHuman, 1, false)
-			nHuman.SetStateEnabled(nHuman, 0, false)
-			nHuman.BreakJointsOnDeath, Human = true, Human.Destroy(Human)
-			localplayer.Character, Cam.CameraSubject, Cam.CFrame = Char, nHuman, wait() and Pos
-			nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
-			local Script = Char.FindFirstChild(Char, "Animate")
-			if Script then
-				Script.Disabled = true
-				wait()
-				Script.Disabled = false
-			end
-			nHuman.Health = nHuman.MaxHealth
-		end,}
-	})
+    Type = "Toggle",
+    Args = {"God mode (Very, VERY UNSTABLE)", function(Self, state) -- Credits to EdgeIY, Infinite Yield
+        godModeEnabled = state
+        
+        if godModeEnabled then
+            -- Enable God Mode
+            local Cam = workspace.CurrentCamera
+            local Pos, Char = Cam.CFrame, localplayer.Character
+            local Human = Char and Char:FindFirstChildWhichIsA("Humanoid")
+            if Human then
+                local nHuman = Human:Clone()
+                nHuman.Parent = Char
+                localplayer.Character = nil
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.Physics, false)
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.GettingUp, false)
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.Dead, false)
+                nHuman.BreakJointsOnDeath = true
+                Human:Destroy()
+                localplayer.Character = Char
+                Cam.CameraSubject = nHuman
+                Cam.CFrame = Pos
+                nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+
+                local Script = Char:FindFirstChild("Animate")
+                if Script then
+                    Script.Disabled = true
+                    wait()
+                    Script.Disabled = false
+                end
+
+                nHuman.Health = nHuman.MaxHealth
+            end
+        else
+            -- Disable God Mode
+            local Cam = workspace.CurrentCamera
+            local Pos, Char = Cam.CFrame, localplayer.Character
+            local Human = Char and Char:FindFirstChildWhichIsA("Humanoid")
+            if Human then
+                local nHuman = Human:Clone()
+                nHuman.Parent = Char
+                localplayer.Character = nil
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.Physics, true)
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.GettingUp, true)
+                nHuman:SetStateEnabled(Enum.HumanoidStateType.Dead, true)
+                nHuman.BreakJointsOnDeath = false
+                Human:Destroy()
+                localplayer.Character = Char
+                Cam.CameraSubject = nHuman
+                Cam.CFrame = Pos
+                nHuman.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.Distance
+
+                local Script = Char:FindFirstChild("Animate")
+                if Script then
+                    Script.Disabled = true
+                    wait()
+                    Script.Disabled = false
+                end
+
+                nHuman.Health = nHuman.MaxHealth
+            end
+        end
+    end}
+})
 	
 	
 	--table.insert(module, {
@@ -3957,15 +4003,6 @@ local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mys
 		end,}
 	})
 	
-	table.insert(module, {
-		Type = "Toggle",
-		Args = {"Simulate knife throw for killing nearest", function(Self, state)
-			simulateKnifeThrow = state
-			if state then
-				fu.notification("Simulating a knife throw can make you look legitimate. However, note that it's less reliable and may miss the target.")
-			end
-		end,}
-	})
 	
 	table.insert(module, {
 		Type = "Button",
@@ -3998,13 +4035,8 @@ local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mys
 	})
 	
 	table.insert(module, {
-		Type = "Text",
-		Args = {"Fun"}
-	})
-	
-	table.insert(module, {
 		Type = "Button",
-		Args = {"Hold everyone hostage", function()
+		Args = {"Hold everyone as hostages", function()
 			if findMurderer() ~= localplayer then fu.notification("You're not murderer. This'll only be useful if you're the murderer.") return end
 	
 			for _, player in ipairs(game.Players:GetPlayers()) do
@@ -4021,7 +4053,7 @@ local function INCZLXU_fake_script() -- Fake Script: StarterGui.YARHM.Murder Mys
 	_G.Modules[3] = module
 	
 end
-local function LREB_fake_script() -- Fake Script: StarterGui.YARHM.Universal
+local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
     local script = Instance.new("LocalScript")
     script.Name = "Universal"
     script.Parent = Converted["_YARHM"]
@@ -4045,8 +4077,8 @@ local function LREB_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	local rs = game:GetService("RunService")
 	local fu = require(script.Parent.FUNCTIONS)
 	
-	local loopfovandws = false
-	local ctrlclicktp = false
+	local loopfovandws = false    
+    local ctrlclicktp = false
 	local ws = 16
 	local fov = 70
 	
@@ -4131,13 +4163,20 @@ local function LREB_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"Welcome to YARHM! The open, free script hub."}
+		Args = {"Welcome to YARHM Elite+! The open, free script hub."}
 	})
 	table.insert(module, {
 		Type = "Button",
-		Args = {"Join our Discord", function(Self)
+		Args = {"Join Imperial's Discord", function(Self)
 			if setclipboard then setclipboard("https://discord.gg/2jbYxvDkxr") end
 			fu.notification('Discord link has been copied to clipboard!')
+		end,}
+	})
+	table.insert(module, {
+		Type = "Button",
+		Args = {"Tiktok Account", function(Self)
+			if setclipboard then setclipboard("https://discord.gg/2jbYxvDkxr") end
+			fu.notification('Tiktok Username has been copied to clipboard!')
 		end,}
 	})
 	table.insert(module, {
@@ -4316,7 +4355,7 @@ local function LREB_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	
 	table.insert(module, {
 		Type = "Button",
-		Args = {"Hide YARHM", function(Self)
+		Args = {"Hide YARHM Elite+", function(Self)
 			if uis.KeyboardEnabled then
 				ts:Create(script.Parent.Menu.UIScale, TweenInfo.new(0.6, Enum.EasingStyle.Cubic, Enum.EasingDirection.Out), {
 					Scale = 0
@@ -4496,19 +4535,19 @@ local function LREB_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	_G.Modules[1] = module
 end
 
-coroutine.wrap(LYFEOXP_fake_script)()
-coroutine.wrap(RMUSSAH_fake_script)()
-coroutine.wrap(EJKZ_fake_script)()
-coroutine.wrap(WGJWPUD_fake_script)()
-coroutine.wrap(ULTRD_fake_script)()
-coroutine.wrap(EQAX_fake_script)()
-coroutine.wrap(SAFWDC_fake_script)()
-coroutine.wrap(PMYRZO_fake_script)()
-coroutine.wrap(FUSF_fake_script)()
-coroutine.wrap(MHTP_fake_script)()
-coroutine.wrap(DFXYOC_fake_script)()
-coroutine.wrap(OQVW_fake_script)()
-coroutine.wrap(KIADNSR_fake_script)()
-coroutine.wrap(HGMTZY_fake_script)()
-coroutine.wrap(INCZLXU_fake_script)()
-coroutine.wrap(LREB_fake_script)()
+coroutine.wrap(TNUH_fake_script)()
+coroutine.wrap(BILF_fake_script)()
+coroutine.wrap(WXYNGOS_fake_script)()
+coroutine.wrap(WUAUKU_fake_script)()
+coroutine.wrap(JDPRURH_fake_script)()
+coroutine.wrap(KYALNYD_fake_script)()
+coroutine.wrap(XHSAU_fake_script)()
+coroutine.wrap(VVIBB_fake_script)()
+coroutine.wrap(WFYLTB_fake_script)()
+coroutine.wrap(AJDP_fake_script)()
+coroutine.wrap(LMQTO_fake_script)()
+coroutine.wrap(MGVWMZA_fake_script)()
+coroutine.wrap(AFSHYE_fake_script)()
+coroutine.wrap(SYRG_fake_script)()
+coroutine.wrap(BKHQP_fake_script)()
+coroutine.wrap(WRIHDU_fake_script)()
