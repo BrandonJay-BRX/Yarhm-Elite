@@ -1,4 +1,4 @@
--- YARHM Elite+ by Brandon Jay, v1.1
+-- YARHM Elite+ by Brandon Jay, v1.2
 -- YARHM by Imperial
 
 -- Instances:
@@ -2362,7 +2362,7 @@ local function WUAUKU_fake_script() -- Fake Script: StarterGui.YARHM.Init
 	_G.Modules = {}
 	
 	--require(script.Parent.FUNCTIONS).notification("Thanks for using YARHM Elite+! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("Updates | Adjustment | Added Tools: Hitbox Loop (Added)")
+	require(script.Parent.FUNCTIONS).notification("Updates | Adjustment | Added Tools: Hitbox Loop (Added) Hold Everyone Universal (Added)")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -3166,7 +3166,7 @@ local function BKHQP_fake_script() -- Fake Script: StarterGui.YARHM.Murder Myste
 	
 	module["Name"] = "Murder Mystery 2"
 	
-	-- Player ESP
+-- Player ESP
 	workspace.ChildAdded:Connect(function(ch)
 		if ch.Name == "Normal" and playerESP then
 			fu.notification("Map has loaded, waiting for roles...")
@@ -3616,8 +3616,8 @@ table.insert(module, {
 		end,}
 	})
 
-	
-	
+
+
 	
 	--table.insert(module, {
 	--	Type = "Button",
@@ -3685,7 +3685,7 @@ table.insert(module, {
 	
 	table.insert(module, {
 		Type = "Text",
-		Args = {"Shoot offset re-aims the gun/knife shoot/throw to the character's predicted position. Recommended is 2."}
+		Args = {"Shoot offset re-aims the gun/knife shoot/throw to the character's predicted position. Recommended is 2.8."}
 	})
 	
 	table.insert(module, {
@@ -4083,7 +4083,7 @@ local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	local ws = 16
 	local fov = 70
 	local hitboxSize = 2
-	
+    
 	local hidden = false
 	
 	task.spawn(function()
@@ -4174,7 +4174,7 @@ local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 		end)
 	end
 	
-	module["Name"] = "Universal"
+	module["Name"] = "Universal V2"
 	
 	local ts = game:GetService("TweenService")
 	
@@ -4201,6 +4201,31 @@ local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 		Args = {"---"}
 	})
 	
+	
+	
+	table.insert(module, {
+    Type = "Button",
+    Args = {"[Good for Knife] Hold Everyone", function()
+        local localplayer = game.Players.LocalPlayer
+        local localTeam = localplayer.Team
+        
+        for _, player in ipairs(game.Players:GetPlayers()) do
+            if localTeam == nil or player.Team ~= localTeam then
+                if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and player ~= localplayer then
+                    player.Character:FindFirstChild("HumanoidRootPart").Anchored = true
+                    player.Character:FindFirstChild("HumanoidRootPart").CFrame = localplayer.Character:FindFirstChild("HumanoidRootPart").CFrame + localplayer.Character:FindFirstChild("HumanoidRootPart").CFrame.LookVector * 5
+                end
+            end
+        end
+        
+        if localTeam == nil then
+            fu.notification("Placed all players in a single point. Kill everyone at once once you decide to.")
+        else
+            fu.notification("Placed all players not on your team in a single point. Kill everyone at once once you decide to.")
+        end
+    end}
+})
+
 	table.insert(module, {
 		Type = "Input",
 		Args = {"Hitbox expander", "Expand everyone's hitbox", function(Self, ToExpand)
