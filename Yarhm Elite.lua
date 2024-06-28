@@ -4204,29 +4204,6 @@ local function WRIHDU_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 	
 	
 	table.insert(module, {
-    Type = "Button",
-    Args = {"[Good for Knife] Hold Everyone", function()
-        local localplayer = game.Players.LocalPlayer
-        local localTeam = localplayer.Team
-        
-        for _, player in ipairs(game.Players:GetPlayers()) do
-            if localTeam == nil or player.Team ~= localTeam then
-                if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and player ~= localplayer then
-                    player.Character:FindFirstChild("HumanoidRootPart").Anchored = true
-                    player.Character:FindFirstChild("HumanoidRootPart").CFrame = localplayer.Character:FindFirstChild("HumanoidRootPart").CFrame + localplayer.Character:FindFirstChild("HumanoidRootPart").CFrame.LookVector * 5
-                end
-            end
-        end
-        
-        if localTeam == nil then
-            fu.notification("Placed all players in a single point. Kill everyone at once once you decide to.")
-        else
-            fu.notification("Placed all players not on your team in a single point. Kill everyone at once once you decide to.")
-        end
-    end}
-})
-
-	table.insert(module, {
 		Type = "Input",
 		Args = {"Hitbox expander", "Expand everyone's hitbox", function(Self, ToExpand)
 			hitboxSize = tonumber(ToExpand) or 2
