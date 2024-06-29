@@ -2362,7 +2362,7 @@ local function WGJWPUD_fake_script() -- Fake Script: StarterGui.YARHM.Init
 	_G.Modules = {}
 	
 	--require(script.Parent.FUNCTIONS).notification("Thanks for using YARHM! To use this hub, triple-click/tap the top region of your screen.")
-	require(script.Parent.FUNCTIONS).notification("YARHM Elite+ V1.3 | Added | Hostages Mode Universal V2")
+	require(script.Parent.FUNCTIONS).notification("YARHM Elite+ V1.3")
 	
 	
 	local menudrag = require(script.Parent.DraggableObject).new(script.Parent.Menu)
@@ -4467,28 +4467,6 @@ local function LREB_fake_script() -- Fake Script: StarterGui.YARHM.Universal
 		end,}
 	})
 	
-	table.insert(module, {
-    Type = "Button",
-    Args = {"[Good for Knife] Hold Everyone", function()
-        local localplayer = game.Players.LocalPlayer
-        local localTeam = localplayer.Team
-        
-        for _, player in ipairs(game.Players:GetPlayers()) do
-            if localTeam == nil or player.Team ~= localTeam then
-                if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and player ~= localplayer then
-                    player.Character:FindFirstChild("HumanoidRootPart").Anchored = true
-                    player.Character:FindFirstChild("HumanoidRootPart").CFrame = localplayer.Character:FindFirstChild("HumanoidRootPart").CFrame + localplayer.Character:FindFirstChild("HumanoidRootPart").CFrame.LookVector * 5
-                end
-            end
-        end
-        
-        if localTeam == nil then
-            fu.notification("Placed all players in a single point. Kill everyone at once once you decide to.")
-        else
-            fu.notification("Placed all players not on your team in a single point. Kill everyone at once once you decide to.")
-        end
-    end}
-})
 	
 	local rsloopconnectionfling
 	local clip = true
